@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova AI - Agentic Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">✦ NOVA AI</div>
+    <button class="new-chat" onclick="newChat()">+ New Chat</button>
+    <p>YOUR AI ASSISTANT</p>
+    <p>Powered by Gemini & LangChain</p>
+    <p>Agentic AI Tools</p>
+    <p>• Calculator</p>
+    <p>• Study Planner</p>
+    <p>• Date & Time</p>
+  </aside>
+
+  <main class="main">
+
+    <header class="header">
+      <h2>Nova Assistant</h2>
+      <span class="status">● AI Online</span>
+    </header>
+
+    <section class="chat-area" id="chatArea">
+
+      <div class="welcome" id="welcome">
+        <h1>Welcome to Nova AI ✨</h1>
+        <p>Your intelligent Agentic AI assistant.<br>
+        Ask questions, solve problems and plan your studies.</p>
+      </div>
+
+    </section>
+
+    <div class="input-area">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask Nova anything..."
+        autocomplete="off"
+      >
+      <button id="sendBtn" onclick="sendMessage()">Send ➤</button>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
