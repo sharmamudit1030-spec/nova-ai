@@ -11,6 +11,9 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static("public"));
+app.get("/", (req, res) => {
+  res.sendFile(process.cwd() + "/public/index.html");
+});
 
 // Tool 1: Calculator
 const calculatorTool = tool(
